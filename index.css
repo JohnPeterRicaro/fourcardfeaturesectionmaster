@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.head{
+    width: 503px;
+    height: 157px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.box{
+    width: 350px;
+    height: 250px;
+    position: relative;
+    border-radius: 12px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: 0px 0px 81px -26px hsla(229, 6%, 66%, 0.95);
+    -webkit-box-shadow: 0px 0px 81px -26px hsla(229, 6%, 66%, 0.95);
+    -moz-box-shadow: 0px 0px 81px -26px hsla(229, 6%, 66%, 0.95);
+}
+.header-1{
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    font-size: 36px;
+}
+.header-2{
+    color: hsl(234, 12%, 34%);
+    font-weight: 400;
+    font-size: 32px;
+}
+.sub-txt{
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    color: hsl(229, 6%, 66%);
+}
+.header-3{
+    padding:0px 30px 0px 30px;
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    font-size: 18px;
+}
+.sub-txt-1{
+    transform: translate(0px, -20px);
+    padding:0px 30px 0px 30px;
+    color: hsl(229, 6%, 66%);
+    font-weight: 200;
+    font-size: 13px;
+}
+.logo{
+    transform: translate(255px, 0px);
+}
+.bar{
+    height: 4px;
+    width: 100%;
+    position: absolute;
+}
+.color-1{
+    background-color: hsl(180, 62%, 55%);
+    transform: translate(0px, -123px);
+}
+.color-2{
+    background-color: hsl(0, 78%, 62%);
+    transform: translate(0px, -123px);
+}
+.color-3{
+    background-color: hsl(34, 97%, 64%);
+    transform: translate(0px, -123px);
+}
+.color-4{
+    background-color: hsl(212, 86%, 64%);
+    transform: translate(0px, -123px);
+}
+.box-1{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.box-3{
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+.box-4{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+@media only screen and (max-width:375px){
+    body{
+        overflow: scroll;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        margin-top: 800px;
+        padding-bottom: 100px;
+        gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .header-1{
+        font-size: 22px;
+    }
+    .header-2{
+        font-size: 22px;
+    }
+    .head{
+        width: 313px;
+        height: 154px;
+        margin-bottom: 0px;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    .box-1{
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .box-2{
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .box-3{
+        grid-column-start: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    .box-4{
+        grid-column-start: 1;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+}@media only screen and (min-width:390px) and (max-width: 472px){
+    body{
+        overflow: scroll;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        margin-top: 600px;
+        padding-bottom: 100px;
+        gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .header-1{
+        font-size: 22px;
+    }
+    .header-2{
+        font-size: 22px;
+    }
+    .head{
+        width: 313px;
+        height: 154px;
+        margin-bottom: 0px;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    .box-1{
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .box-2{
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .box-3{
+        grid-column-start: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    .box-4{
+        grid-column-start: 1;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+}
